@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class desafio3 {
     static Integer alvo;
     public static void main(String[] args) {
         Integer totalPares = 0;
@@ -23,11 +23,11 @@ public class Main {
         List<Integer> valoresInteiros = new ArrayList<Integer>();
         Scanner sc = new Scanner(in);
 
-        Integer total = Integer.parseUnsignedInt(sc.nextLine());
-        alvo = Integer.parseUnsignedInt(sc.nextLine());
+        Integer total = sc.nextInt();
+        alvo = sc.nextInt();
 
         while (valoresInteiros.size() < total)
-            valoresInteiros.add(Integer.parseUnsignedInt(sc.nextLine()));
+            valoresInteiros.add(sc.nextInt());
 
         sc.close();
         return valoresInteiros;

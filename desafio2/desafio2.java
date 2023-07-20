@@ -1,12 +1,12 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class Main {
+public class desafio2 {
     final static Double[] notas = new Double[] { 100D, 50D, 20D, 10D, 5D, 2D };
     final static Double[] moedas = new Double[] { 1D, .50D, .25D, .10D, .05D, .01D };
     public static void main(String[] args) {
         Scanner sc = new Scanner(in);
-        calculaNotas(Double.parseDouble(sc.nextLine()));
+        calculaNotas(sc.nextDouble());
         sc.close();
     }
 
